@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <a href="index.html">Home</a>
+    <script src="app.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background-image: url("background 5.jpg");
+      }
+
+      #home_image {
+        background-color: grey;
+        height: 60px;
+        width: 50px;
+        border-radius: 25%;
+        margin: 10px 20px 10px 40px;
+      }
+      header {
+        background-color: #eeddaa;
+        border: 1px solid green;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        font-size: 25px;
+        color: #aabbff;
+        margin: 1px;
+        border-collapse: collapse;
+        height: 125px;
+      }
+
+      nav {
+        float: left;
+        width: 25%;
+        height: 300px;
+        background: #abc;
+        padding: 20px;
+        border: 1px solid green;
+        border-radius: 3px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 75%;
+        background-color: #bed;
+        border: 1px solid green;
+        border-radius: 3px;
+        height: 300px;
+      }
+
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: darkslategrey;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border-collapse: collapse;
+        border: 1px solid green;
+        border-radius: 3px;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+    <title>exams</title>
+  </head>
+  <body style="background-image: url('background 4.jpg');">
+    <h1>Our Programs</h1>
+    <p>
+      This page contains our Unified Tertiary Matriculation preparatory Past
+      Question for the last 10 years.
+    </p>
+    <p>
+      Learn JavaScript and Python this summer! Two of the hottest programming
+      languages. <a href="registration.html">summer school</a>
+    </p>
+
+    <h6></h6>
+
+    <header>
+      <h2>Programs</h2>
+      <img id="home_image" src="image3.jpg" alt="image" />
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">SSCE</a></li>
+          <li><a href="#">UTME</a></li>
+          <li><a href="#">POST UTME</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Coding</h1>
+        <p>
+          Learn Web development and data science this summer. There shall be
+          three streams beginning with the first stream. The first stream starts
+          this June.
+        </p>
+        <p>
+          We train students to be ready for the challenges and opportunities
+          that the 21st Century provides.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>
+        Expert Education Centre, Ibadan 8, Comrade Ola Oyebola, Ring Road,
+        Ibadan, Oyo State, Nigeria.
+      </p>
+    </footer>
+  </body>
+</html>
