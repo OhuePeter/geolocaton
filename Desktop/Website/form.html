@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <a href="index.html">Home</a> 
+    <script src="app.js"></script>
+    <style>
+      img {
+        width: 135px;
+        height: 100px;
+      }
+    </style>
+
+    <script>
+      // validate form
+      function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      // Age function
+      function myFunction() {
+        var x, text;
+      
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("numb").value;
+      
+        // If x is Not a Number or less than one or greater than 100
+        if (isNaN(x) || x < 1 || x > 100) {
+          text = "Input not valid";
+        } else {
+          text = "Input OK";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+    <title>Register</title>
+  </head>
+  <body style="background-image: url('background1.jpg');">
+    
+    <div>
+      <img src="image1.jpg" alt="image">
+    </div>
+    <div>
+      <form action=""> First Name: <input type="text" name="fname"><br>
+      Last Name: <input type="text" name="lname"><br>
+      Age: <input id="numb"><br>      
+      E-mail: <input type="text" name="email"><br> 
+      Gender:	
+        <input type="radio" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" value="female">
+        <label for="female">Female</label><br>
+      </form>         
+    </div>
+    <div>
+      <form>
+        <input type="checkbox" id="secondary" name="Secondary" value="Secondary">
+        <label for="secondary">Secondary school</label><br>
+        <input type="checkbox" id="tertiary" name="tertiary" value="tertiary">
+        <label for="Tertiary">University/College</label><br>
+        <input type="checkbox" id="graduate" name="graduate" value="Graduate">
+        <label for="graduate">Graduate</label>
+        <input type="checkbox" id="others" name="others" value="Others">
+        <label for="others">Others</label>
+      </form>
+      Comment: <textarea name="comment" rows="5" cols="50"></textarea><br>
+      
+      <button type="button" onclick="myFunction()">Submit</button>      
+      <p id="demo"></p>
+    </div>
+    
+    <div>
+      
+    </div>   
+  </body>
+</html>
+
+
+		
+    
+    
+    <!-- <div style="background-color: yellow">
+			<audio src="Psalm23.mp3" controls></audio>
+		</div>
+
+		<div style="background-color: green">
+			<video src="animation.mp4" controls width="300" height="200"></video>
+		</div>
+	</body>
+</html>
+
